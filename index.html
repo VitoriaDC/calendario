@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mantenha-se organizado com nosso Calendário intuitivo com eventos, lembretes e interface personalizável. Feito com HTML, CSS e JavaScript. Comece a planejar hoje mesmo!"
+    />
+    <meta
+      name="keywords"
+      content="calendário, eventos, lembretes, javascript, html, css, código aberto"
+    />
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      xintegrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link para o arquivo de estilos CSS personalizado (certifique-se de que style.css está na mesma pasta) -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Calendário de Eventos</title>
+  </head>
+  <body>
+    <!-- Container principal da aplicação de calendário -->
+    <div class="container">
+      <!-- Seção esquerda: Calendário e navegação -->
+      <div class="left">
+        <div class="calendar">
+          <!-- Cabeçalho do mês com botões de navegação -->
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">Abril 2025</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <!-- Dias da semana -->
+          <div class="weekdays">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+          </div>
+          <!-- Container para os dias do mês (será preenchido pelo JS) -->
+          <div class="days"></div>
+          <!-- Opções para ir para uma data específica ou para o dia de hoje -->
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/aaaa" class="date-input" />
+              <button class="goto-btn">Ir</button>
+            </div>
+            <button class="today-btn">Hoje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Seção direita: Detalhes do dia e eventos -->
+      <div class="right">
+        <!-- Data selecionada atualmente -->
+        <div class="today-date">
+          <div class="event-day">qua</div>
+          <div class="event-date">17 de abril de 2025</div>
+        </div>
+        <!-- Container para a lista de eventos (será preenchido pelo JS) -->
+        <div class="events"></div>
+        <!-- Wrapper para o formulário de adicionar evento (oculto por padrão) -->
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Adicionar Evento</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Nome do Evento" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Horário de Início"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Horário de Término"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Adicionar Evento</button>
+          </div>
+        </div>
+      </div>
+      <!-- Botão flutuante para adicionar um novo evento -->
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <!-- Seção de créditos do desenvolvedor -->
+    <div class="credits">
+      <p>
+        Feito com ❤️ por
+        <a href="#" target="_blank">Vitória Esteffany</a>
+      </p>
+    </div>
+
+    <!-- Link para o arquivo de script JavaScript (certifique-se de que script.js está na mesma pasta) -->
+    <script src="script.js"></script>
+  </body>
+</html>
