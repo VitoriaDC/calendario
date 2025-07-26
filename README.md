@@ -66,4 +66,7 @@ Este projeto é um calendário web que permite:
 - 🧠 Armazenamento local dos eventos (persistência mesmo após fechar o navegador)  
 - 📱💻 Design responsivo para diferentes tamanhos de tela
 
----
+--- 
+## 💻 Confira uma breve demonstração das funcionalidades do calendário 🩵: 
+![Demonstração do Calendário](Animação.gif)
+
