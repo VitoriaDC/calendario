@@ -1,5 +1,7 @@
 # Calendário de Eventos Simples 🗓️
 
+[🚀 **Clique aqui para acessar o projeto online**](https://vitoriadc.github.io/calendario/)
+
 Um calendário de eventos interativo e fácil de usar, desenvolvido com **HTML**, **CSS** e **JavaScript puro**. 
 
 ---
